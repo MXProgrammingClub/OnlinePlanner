@@ -1,4 +1,7 @@
 # @author Lucas DeGreeff
+
+#this is a test change
+
 class Day:
     """
     Defines a day within the schedule
@@ -7,11 +10,11 @@ class Day:
     def __init__(self, day, blocks):
         self.day = day
         self.blocks = blocks
-    
+
     def sort_blocks():
         temp = []
         for w in range(0, len(blocks)):
-            
+
 class Block:
     """
     Defines a block, such as Tuesday H or Friday F
@@ -44,7 +47,7 @@ class Block:
         #Assigns new value to isPm attribute
         def change_pm(self, isPM):
             self.isPm = isPM
-            
+
         #returns time min minutes later
         def mins_later(self, min):
             resMin = self.minute
@@ -101,7 +104,7 @@ class Block:
         if(time_end.equals(Time(0,0))):
             self.time_end = self.time_start.mins_later(40)
         else:
-            self.time_end = time_end 
+            self.time_end = time_end
         self.is_test_day = is_test_day
 
     def new_start(self, start):
@@ -115,5 +118,3 @@ class Block:
 
     def new_name(self, name):
         self.name = name
-    
-
